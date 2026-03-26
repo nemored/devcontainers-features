@@ -1,0 +1,19 @@
+{
+    "name": "Codex ACP",
+    "id": "codex-acp",
+    "version": "0.1.0",
+    "description": "Zed Industries' ACP adapter for Codex CLI",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Version of @zed-industries/codex-acp to install."
+        }
+    },
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/node:1": {}
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
