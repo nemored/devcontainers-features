@@ -10,8 +10,10 @@
             "description": "Version of @zed-industries/codex-acp to install."
         }
     },
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/node:1": {}
+    },
     "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils",
-        "ghcr.io/devcontainers/features/node"
+        "ghcr.io/devcontainers/features/common-utils"
     ]
 }
