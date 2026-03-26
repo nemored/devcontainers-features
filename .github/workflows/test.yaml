@@ -14,6 +14,7 @@ jobs:
     strategy:
       matrix:
         features:
+          - codex-acp
           - color
           - hello
         baseImage:
