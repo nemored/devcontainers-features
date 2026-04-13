@@ -15,8 +15,6 @@ jobs:
       matrix:
         features:
           - codex-acp
-          - color
-          - hello
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -36,8 +34,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - codex-acp
     steps:
       - uses: actions/checkout@v4
 
