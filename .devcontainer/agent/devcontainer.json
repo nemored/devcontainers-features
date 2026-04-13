@@ -23,7 +23,8 @@
         "ghcr.io/dirien/devcontainer-feature-codex/codex:0": {}
     },
     "mounts": [
-        "source=${localWorkspaceFolderBasename}-codex,target=/root/.codex,type=volume"
+        "source=${localWorkspaceFolderBasename}-codex,target=/root/.codex,type=volume",
+        "source=${localEnv:HOME}/.config/git/ignore,target=/root/.config/git/ignore,type=bind,readonly"
     ],
     "remoteUser": "root",
     "updateContentCommand": "npm install -g @devcontainers/cli"
