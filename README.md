@@ -17,13 +17,30 @@ Installs Zed Industries' ACP adapter for Codex CLI.
 }
 ```
 
+### `orchard`
+
+Installs the Orchard CLI from [cirruslabs/orchard](https://github.com/cirruslabs/orchard).
+
+```jsonc
+{
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/nemored/devcontainers-features/orchard:0": {}
+    }
+}
+```
+
 ## Repository Structure
 
 Each Feature has its own subdirectory under `src`, containing at least a `devcontainer-feature.json` and an `install.sh` entrypoint.
 
 ```text
 src/
-└── codex-acp/
+├── codex-acp/
+│   ├── devcontainer-feature.json
+│   ├── install.sh
+│   └── README.md
+└── orchard/
     ├── devcontainer-feature.json
     ├── install.sh
     └── README.md
@@ -39,10 +56,11 @@ Run the feature test suite from the repository root:
 devcontainer features test .
 ```
 
-To test the `codex-acp` feature directly:
+To test a single feature directly:
 
 ```bash
 devcontainer features test -f codex-acp .
+devcontainer features test -f orchard .
 ```
 
 ## Publishing
