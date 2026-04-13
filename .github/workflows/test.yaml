@@ -15,6 +15,7 @@ jobs:
       matrix:
         features:
           - codex-acp
+          - orchard
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -35,6 +36,7 @@ jobs:
       matrix:
         features:
           - codex-acp
+          - orchard
     steps:
       - uses: actions/checkout@v4
 

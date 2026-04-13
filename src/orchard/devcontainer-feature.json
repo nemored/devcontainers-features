@@ -1,0 +1,16 @@
+{
+    "name": "Orchard CLI",
+    "id": "orchard",
+    "version": "0.1.0",
+    "description": "Installs the Orchard CLI for orchestrating Tart virtual machines.",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Version of the Orchard CLI to install."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
