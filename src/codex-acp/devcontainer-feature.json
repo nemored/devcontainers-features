@@ -1,7 +1,7 @@
 {
     "name": "Codex ACP",
     "id": "codex-acp",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Zed Industries' ACP adapter for Codex CLI",
     "options": {
         "version": {
